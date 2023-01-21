@@ -20,11 +20,11 @@ return new class extends Migration
             $table->unsignedBigInteger("deporte_id");
             $table->unsignedBigInteger("entrenador_id");
             $table->unsignedBigInteger("users_id");
-            $table->timestamps();
-
+            
             $table->foreign('deporte_id') -> references ('id') -> on('deportes')->onDelete('CASCADE');
             $table->foreign('entrenador_id') -> references ('id') -> on('entrenador')->onDelete('CASCADE');
             $table->foreign('users_id') -> references ('id') -> on('users')->onDelete('CASCADE');
+            $table->timestamps();
         });
     }
 

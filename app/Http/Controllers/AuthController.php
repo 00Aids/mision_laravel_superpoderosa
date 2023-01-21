@@ -55,7 +55,7 @@ class AuthController extends Controller
             if ($request->admin_code && $request->admin_code =='programaresgod'){
                 $user->assignRole('admin');
             }else{
-                $user->assignRole('customer');
+                $user->assignRole('manager');
             }
   
              

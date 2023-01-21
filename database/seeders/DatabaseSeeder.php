@@ -22,6 +22,8 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this -> call([ PermissionSedeer::class]);
+        $this -> call([ DeporteSedeer::class]);
+        $this -> call([ JugadorSedeer::class]);
 
     }
 }
